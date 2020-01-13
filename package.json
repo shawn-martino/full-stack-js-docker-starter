@@ -1,0 +1,19 @@
+{
+  "name": "full-stack-js-docker-starter",
+  "version": "1.0.0",
+  "description": "Typescript Boilerplate for Client + Server with Docker.",
+  "scripts": {
+    "dev:up": "ansible-playbook playbook.dev.yml",
+    "dev:down": "ansible-playbook ./.playbooks/destroy.dev.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-martino/full-stack-js-docker-starter.git"
+  },
+  "author": "Shawn Martino",
+  "license": "MIT",
+  "homepage": "https://github.com/shawn-martino/full-stack-js-docker-starter#readme",
+  "bugs": {
+    "url": "https://github.com/shawn-martino/full-stack-js-docker-starter/issues"
+  }
+}

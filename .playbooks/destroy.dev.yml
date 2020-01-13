@@ -1,0 +1,28 @@
+---
+- hosts: localhost
+  tasks:
+    - name: remove Nginx container
+      docker_container:
+        name: nginx
+        state: absent
+
+    - name: remove Postgres container
+      docker_container:
+        name: postgres
+        state: absent
+
+    - name: remove Backend container
+      docker_container:
+        name: backend
+        state: absent
+
+    - name: remove Frontend container
+      docker_container:
+        name: frontend
+        state: absent
+
+    - name: Delete network, disconnecting all containers
+      docker_network:
+        name: full_stack_app
+        state: absent
+        force: yes
