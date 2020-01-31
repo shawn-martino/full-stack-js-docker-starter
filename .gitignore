@@ -16,6 +16,8 @@ build
 .env.test.local
 .env.production.local
 
+.todo/
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
